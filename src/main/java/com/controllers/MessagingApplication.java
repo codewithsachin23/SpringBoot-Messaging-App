@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessagingApplication {
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from BridgeLabz";
-    }
+        return "Hello from BridgeLab";
 
+    }
 }
