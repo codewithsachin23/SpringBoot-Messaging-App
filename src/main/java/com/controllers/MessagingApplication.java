@@ -22,9 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessagingApplication {
 
 
+
     @PostMapping("/post")
     public String hello4(@RequestBody UserDTO user) {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLab";
+    }
+    @GetMapping("/query")
+    public String hello2(@RequestParam String name) {
+        return "Hello "+ name +" from BridgeLab";
 
     }
 
