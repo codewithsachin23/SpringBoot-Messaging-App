@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MessagingApplication {
-    @GetMapping("/q")
+    @GetMapping("/query")
     public String hello2(@RequestParam String name) {
         return "Hello "+ name +" from BridgeLab";
     }
